@@ -11,29 +11,29 @@
 
 <body>
 
-    <form>
-        <fieldset disabled>
+    <form name="MovieWatchList">
+        <fieldset>
             <legend>Movie Watchlist</legend>
             <div class="mb-3">
                 <label for="disabledTextInput" class="form-label">Movie</label>
-                <input type="text" id="movieName" class="form-control" placeholder="Enter Movie Name">
+                <input type="text" id="movieName" name="name" class="form-control" placeholder="Enter Movie Name">
             </div>
 
             <div class="mb-3">
                 <label for="disabledTextInput" class="form-label">Genere</label>
-                <input type="text" id="movieGenere" class="form-control" placeholder="Genere">
+                <input type="text" id="movieGenere" name="genere" class="form-control" placeholder="Genere">
             </div>
 
             <div class="mb-3">
                 <label for="disabledTextInput" class="form-label">Rating</label>
-                <input type="text" id="movieRating" class="form-control" placeholder="Rating (1 - 10)">
+                <input type="number" id="movieRating" name="rating" class="form-control" placeholder="Rating (1 - 10)">
             </div>
-            <button type="submit" class="btn btn-primary">Add</button>
+            <button type="submit" class="btn btn-addMovie">Add</button>
         </fieldset>
     </form>
 
     <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./assets/imgs/movie.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
