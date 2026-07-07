@@ -4,7 +4,13 @@ let movies = [];
 if (localStorage.getItem("movies") != null){
     movies = JSON.parse(localStorage.getItem("movies"));
 }
-movieWatchListForm.onsubmit = () => {
+movieWatchListForm.onsubmit = (e) => {
+    e.preventDefault();
+
+    if (rating < 1 || rating > 10) {
+        alert("Rating must be between 1 and 10");
+        return;
+    }
 
     const movie = {
         name: movieWatchListForm.name.value,
